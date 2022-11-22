@@ -31,9 +31,9 @@ $(document).ready(function () {
 // Мобильное меню бургер
 function burgerMenu() {
     const burger = document.querySelector('.burger')
-    const menu = document.querySelector('.menu')
+    const menu = document.querySelector('.menu-block')
     const body = document.querySelector('body')
-    const info = document.querySelector('.info')
+    const info = document.querySelector('.info-block')
     burger.addEventListener('click', () => {
         if (!menu.classList.contains('active')) {
             menu.classList.add('active')
