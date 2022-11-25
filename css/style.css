@@ -5632,6 +5632,24 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+.btn{
+  display: none;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px !important;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+.btn-ing{
+  width: 140px;
+  height: 140px;
+  border-radius: 75px !important;
+  background: white;
+  cursor: pointer;
+}
+
 @media (max-width: 1237px) {
   .slider-for__item--1 {
     max-width: 100%;
