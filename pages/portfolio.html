@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>CreateX</title>
+</head>
+
+<body class="main__body">
+    <!-- Header -->
+    <div>
+        <img src="../img/service-hero3.png" class="bg-hero bg-hero__portfolio" alt="">
+        <header class="main-color ">
+            <nav>
+                <div class="wrapper">
+                    <div class="navbar">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="../img/svg/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__item-link" data-scroll>About Us</a>
+                            </li>
+                            <div class="dropdown">
+                                <li class="menu__item">
+                                    <button  onclick="myFunction()" class="menu__item-link dropbtn" data-scroll>Services
+                                        <svg  width="14" height="9" viewBox="0 0 16 9" xmlns="http://www.w3.org/2000/svg">
+                                            <path class="drop-icon" fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 8.70711C-0.0976311 8.31658 -0.0976311 7.68342 0.292893 7.29289L7.29289 0.292893C7.68342 -0.0976315 8.31658 -0.0976315 8.70711 0.292893L15.7071 7.29289C16.0976 7.68342 16.0976 8.31658 15.7071 8.70711C15.3166 9.09763 14.6834 9.09763 14.2929 8.70711L8 2.41421L1.70711 8.70711C1.31658 9.09763 0.683417 9.09763 0.292893 8.70711Z" />
+                                        </svg>
+                                    </button>
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="services.html">Service-1</a>
+                                        <a href="services-2.html">Service-2</a>
+                                    </div>
+                                </li>
+                            </div>
+                            <li class="menu__item"><a href="portfolio.html" class="menu__item-link" data-scroll>Work</a></li>
+                            <li class="menu__item"><a href="news.html" class="menu__item-link" data-scroll>News</a></li>
+                            <li class="menu__item"><a href="contacts.html" class="menu__item-link" data-scroll>Contacts</a></li>
+                        </ul>
+                        <div class="info-block">
+                            <div class="tell">
+                                <img src="../img/svg/tell.svg" alt="" class="tell__img">
+                                <div class="tell__info">
+                                    <p class="tell__call">Call us</p>
+                                    <a href="telto:(405) 555-0128" class="tell__num">(405) 555-0128</a>
+                                </div>
+                            </div>
+                            <div class="chat">
+                                <img src="../img/svg/chat.svg" alt="" class="chat__img">
+                                <div class="chat__info">
+                                    <p class="chat__call">Talk to us</p>
+                                    <a href="mail:hello@createx.com" class="chat__num">hello@createx.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="burger">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="section__main-hero">
+            <div class="wrapper">
+                <div class="main-hero__item">
+                    <div class="main-hero__navigate">
+                        <a href="index.html" class="main-hero__Homepage">Homepage</a> <span class="icon-around">/</span>
+                        <a href="portfolio.html"
+                            class="main-hero__Services main-hero__Services--2 main-hero__Services--3">Work</a>
+                    </div>
+                    <h1 class="main-hero__title">OUR WORK</h1>
+                    <p class="main-hero__text">
+                        Our portfolio represents 20 years of construction experience backed by a passion
+                        for perfect client service, quality and innovations in consctuction industry.
+                    </p>
+                </div>
+                <div class="main-hero__item main-hero__item-right">
+                    <div class="main-hero__item-right--item main-hero__item-right--primary">
+                        <svg class="main-hero__item-right--img" fill="#fff" width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_39293_1337)">
+                                <path d="M28.9219 21.0938C26.9645 21.0938 25.2653 21.9855 24 23.6748C22.7344 21.9855 21.0352 21.0938 19.0781 21.0938C15.423 21.0938 12.75 24.0978 12.75 27.7841C12.75 32.5499 17.369 35.5437 23.0848 40.4425C23.3481 40.6681 23.6741 40.7813 24 40.7809C24.3259 40.7809 24.6519 40.6681 24.9152 40.4425C30.6379 35.5375 35.25 32.5481 35.25 27.7841C35.25 24.1007 32.5796 21.0938 28.9219 21.0938V21.0938ZM24 37.5286C18.85 33.178 15.5625 30.832 15.5625 27.7841C15.5625 25.5732 17.0739 23.9063 19.0781 23.9063C21.6844 23.9063 22.6069 26.9652 22.6472 27.1036C22.8193 27.7075 23.3712 28.125 24 28.125C24.6306 28.125 25.184 27.705 25.3539 27.0978C25.363 27.0659 26.2782 23.9063 28.9219 23.9063C30.9258 23.9063 32.4375 25.5732 32.4375 27.7841C32.4375 30.8346 29.1456 33.1816 24 37.5286V37.5286Z" />
+                                <path d="M46.5934 45.188H42.3746V23.3446C42.3827 23.3505 42.3907 23.356 42.3988 23.3619C43.0203 23.8075 43.8842 23.6746 44.343 23.063L47.7188 18.5641C47.9451 18.262 48.0406 17.8819 47.9843 17.5087C47.9275 17.1355 47.7231 16.8008 47.417 16.58C47.1921 16.4178 24.9437 0.354281 24.8298 0.271883C24.3369 -0.0884687 23.6678 -0.0892012 23.1742 0.268953C23.1064 0.318026 18.8573 3.38578 14.0625 6.84794V4.21964C14.0625 3.44291 13.433 2.81339 12.6562 2.81339H7.03125C6.25452 2.81339 5.625 3.44291 5.625 4.21964V12.9399C2.74146 15.0218 0.651123 16.5309 0.583008 16.58C0.277222 16.8008 0.072876 17.1355 0.0161133 17.5087C-0.0406494 17.8819 0.0549317 18.2624 0.281616 18.5641L3.65698 23.063C4.11584 23.6746 4.97974 23.8075 5.6012 23.3619C5.60925 23.356 5.61694 23.3505 5.625 23.3446V45.1884H1.40625C0.629517 45.1884 0 45.8179 0 46.5947C0 47.371 0.629517 48.0009 1.40625 48.0009H46.5934C47.3701 48.0009 47.9996 47.371 47.9996 46.5947C47.9996 45.8179 47.3701 45.188 46.5934 45.188V45.188ZM8.4375 5.62589H11.25V8.87858C10.2975 9.56632 9.35083 10.2497 8.4375 10.9089V5.62589ZM5.08081 20.2743L3.39075 18.0218C17.5712 7.78361 22.3722 4.31705 24 3.14151C26.2672 4.77884 33.1714 9.76371 44.6093 18.0218L42.9196 20.2743C42.7793 20.174 24.98 7.4108 24.8225 7.29764C24.3311 6.94315 23.6678 6.94388 23.1771 7.29801C22.8582 7.52726 5.48254 19.9861 5.08081 20.2743V20.2743ZM8.4375 21.3279C18.7676 13.9209 22.5864 11.1828 24 10.1687C25.9102 11.5387 31.1199 15.2745 39.5625 21.3279V45.1884H8.4375V21.3279Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_39293_1337">
+                                    <rect width="48" height="48"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="main-hero__item-right--text main-hero__item-right--white">All Projects</div>
+                    </div>
+                    <div class="main-hero__item-right--item">
+                        <svg class="main-hero__item-right--img" fill="#FF5A30" width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M46.5938 25.4062C47.3704 25.4062 48 24.7766 48 24V13.5C48 12.7234 47.3704 12.0938 46.5938 12.0938C45.6135 12.0938 26.4628 12.0938 25.4062 12.0938V3C25.4062 2.22337 24.7766 1.59375 24 1.59375H9C8.22337 1.59375 7.59375 2.22337 7.59375 3V12.0938H1.40625C0.629625 12.0938 0 12.7234 0 13.5V24C0 24.7766 0.629625 25.4062 1.40625 25.4062H7.59375V33.0938H1.40625C0.629625 33.0938 0 33.7234 0 34.5V45C0 45.7766 0.629625 46.4062 1.40625 46.4062H46.5938C47.3704 46.4062 48 45.7766 48 45V34.5C48 33.7234 47.3704 33.0938 46.5938 33.0938H40.4062V25.4062H46.5938ZM45.1875 22.5938C43.683 22.5938 34.3936 22.5938 32.9062 22.5938V14.9062H45.1875V22.5938ZM30.0938 22.5938C28.6208 22.5938 19.3889 22.5938 17.9062 22.5938V14.9062H30.0938V22.5938ZM10.4062 4.40625H22.5938V12.0938C21.1208 12.0938 11.8889 12.0938 10.4062 12.0938V4.40625ZM2.8125 22.5938V14.9062H15.0938V22.5938C13.6058 22.5938 4.31672 22.5938 2.8125 22.5938ZM10.4062 25.4062H22.5938V33.0938C21.1208 33.0938 11.8889 33.0938 10.4062 33.0938V25.4062ZM2.8125 35.9062H15.0938V43.5938H2.8125V35.9062ZM17.9062 35.9062H30.0938V43.5938H17.9062V35.9062ZM45.1875 35.9062V43.5938H32.9062V35.9062H45.1875ZM37.5938 33.0938C36.1208 33.0938 26.8889 33.0938 25.4062 33.0938V25.4062H37.5938V33.0938Z" />
+                        </svg>
+
+                        <div class="main-hero__item-right--text">Construction</div>
+                    </div>
+                    <div class="main-hero__item-right--item">
+                        <svg class="main-hero__item-right--img" fill="#FF5A30" width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M42.375 2.90625C40.2971 2.90625 38.4788 4.03866 37.5049 5.71875H1.40625C0.629625 5.71875 0 6.34837 0 7.125V43.6875C0 44.4641 0.629625 45.0938 1.40625 45.0938H42.375C45.4766 45.0938 48 42.5704 48 39.4688V8.53125C48 5.42963 45.4766 2.90625 42.375 2.90625ZM42.375 42.2812C41.8249 42.2812 3.32409 42.2812 2.8125 42.2812V8.53125H36.75V39.4688C36.75 40.2454 37.3796 40.875 38.1562 40.875C38.9329 40.875 39.5625 40.2454 39.5625 39.4688C39.5625 37.9179 40.8242 36.6562 42.375 36.6562C43.9258 36.6562 45.1875 37.9179 45.1875 39.4688C45.1875 41.0196 43.9258 42.2812 42.375 42.2812ZM45.1875 34.5986C44.3597 34.1187 43.3988 33.8438 42.375 33.8438C41.3512 33.8438 40.3903 34.1187 39.5625 34.5986V8.53125C39.5625 6.98044 40.8242 5.71875 42.375 5.71875C43.9258 5.71875 45.1875 6.98044 45.1875 8.53125V34.5986Z" />
+                            <path d="M32.4375 11.3438H7.125C6.34837 11.3438 5.71875 11.9734 5.71875 12.75V38.0625C5.71875 38.8391 6.34837 39.4688 7.125 39.4688H21.1875C21.5605 39.4688 21.9181 39.3205 22.1818 39.0568C22.4456 38.7931 22.5938 38.4354 22.5938 38.0625V35.25C22.5938 33.4166 23.7693 31.8526 25.4062 31.2722V38.0625C25.4062 38.8391 26.0359 39.4688 26.8125 39.4688H32.4375C33.2141 39.4688 33.8438 38.8391 33.8438 38.0625V12.75C33.8438 11.9734 33.2141 11.3438 32.4375 11.3438ZM31.0312 36.6562H28.2188V29.625C28.2188 28.8484 27.5891 28.2188 26.8125 28.2188C22.9355 28.2188 19.7812 31.373 19.7812 35.25V36.6562H8.53125V28.2188H14.1562V32.4375C14.1562 33.2141 14.7859 33.8438 15.5625 33.8438C16.3391 33.8438 16.9688 33.2141 16.9688 32.4375V26.8125C16.9688 26.0359 16.3391 25.4062 15.5625 25.4062H8.53125V14.1562H16.9688V19.7812H12.75C11.9734 19.7812 11.3438 20.4109 11.3438 21.1875C11.3438 21.9641 11.9734 22.5938 12.75 22.5938H18.375H24C24.7766 22.5938 25.4062 21.9641 25.4062 21.1875C25.4062 20.4109 24.7766 19.7812 24 19.7812H19.7812V14.1562H31.0312V36.6562Z" />
+                        </svg>
+                        <div class="main-hero__item-right--text">Project Development</div>
+                    </div>
+                    <div class="main-hero__item-right--item">
+                        <svg class="main-hero__item-right--img" fill="#FF5A30" width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.9375 33.8438C7.61128 33.8438 5.71875 35.7363 5.71875 38.0625C5.71875 40.3887 7.61128 42.2812 9.9375 42.2812C12.2637 42.2812 14.1562 40.3887 14.1562 38.0625C14.1562 35.7363 12.2637 33.8438 9.9375 33.8438ZM9.9375 39.4688C9.16209 39.4688 8.53125 38.8379 8.53125 38.0625C8.53125 37.2871 9.16209 36.6562 9.9375 36.6562C10.7129 36.6562 11.3438 37.2871 11.3438 38.0625C11.3438 38.8379 10.7129 39.4688 9.9375 39.4688Z" />
+                            <path d="M45.4619 28.569C46.4213 27.2707 46.598 25.4603 45.7256 23.9496L40.1035 14.118C39.131 12.4335 37.0801 11.6648 35.2507 12.1538C35.6402 10.4029 34.8759 8.52441 33.2423 7.58119L23.5 1.95656C22.1087 1.15313 20.4451 1.23544 19.1657 2.02678C18.4242 0.812437 17.0865 0 15.5625 0H4.21875C1.89253 0 0 1.89253 0 4.21875C0 5.19422 0 42.6583 0 43.7812C0 46.1075 1.89253 48 4.21875 48C5.31122 48 38.4345 48 43.7812 48C46.1075 48 48 46.1075 48 43.7812V32.4375C48 30.7085 46.954 29.2197 45.4619 28.569ZM16.9688 43.7812C16.9688 44.5567 16.3379 45.1875 15.5625 45.1875H4.21875C3.44334 45.1875 2.8125 44.5567 2.8125 43.7812C2.8125 43.1388 2.8125 31.6483 2.8125 31.0312H16.9688V43.7812ZM16.9688 28.2188H2.8125V16.875H16.9688V28.2188ZM16.9688 14.0625H2.8125V4.21875C2.8125 3.44334 3.44334 2.8125 4.21875 2.8125H15.5625C16.3379 2.8125 16.9688 3.44334 16.9688 4.21875V14.0625ZM19.7812 5.5845L20.1723 4.90716C20.5602 4.23544 21.4222 4.00444 22.0938 4.39228L31.836 10.0169C32.5077 10.4048 32.7386 11.2667 32.3497 11.9403L30.7249 14.7647C30.6842 14.8248 30.6476 14.8872 30.6169 14.9524L19.7812 33.787V5.5845ZM19.7812 39.427L32.9271 16.5767L35.6452 15.0074C36.3342 14.6096 37.2793 14.8512 37.665 15.5192L43.2871 25.3507C43.676 26.0242 43.4492 26.8877 42.7688 27.2805C41.7645 27.8618 20.7702 40.0161 19.7812 40.5886V39.427ZM45.1875 43.7812C45.1875 44.5567 44.5567 45.1875 43.7812 45.1875H19.5394C19.6893 44.7647 19.7734 44.3113 19.7798 43.8393L41.9034 31.0312H43.7812C44.5567 31.0312 45.1875 31.6621 45.1875 32.4375V43.7812Z" />
+                        </svg>
+                        <div class="main-hero__item-right--text">Interior Design</div>
+                    </div>
+                    <div class="main-hero__item-right--item">
+                        <svg class="main-hero__item-right--img" fill="#FF5A30" width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M39.5625 4.21875C39.5625 1.89258 37.6699 0 35.3438 0H7.21875C4.89258 0 3 1.89258 3 4.21875V12.6562C3 14.9824 4.89258 16.875 7.21875 16.875H35.3438C37.6699 16.875 39.5625 14.9824 39.5625 12.6562V11.25H40.9688C41.744 11.25 42.375 11.881 42.375 12.6562V18.2812C42.375 19.0565 41.744 19.6875 40.9688 19.6875H24.0938C21.7676 19.6875 19.875 21.5801 19.875 23.9062V28.125H18.4688C17.692 28.125 17.0625 28.7545 17.0625 29.5312V35.0797L15.6562 40.7955C14.7418 44.4529 17.5052 48 21.2812 48C25.0591 48 27.8196 44.4492 26.9077 40.8007L25.5 35.0797V29.5312C25.5 28.7545 24.8705 28.125 24.0938 28.125H22.6875V23.9062C22.6875 23.131 23.3185 22.5 24.0938 22.5H40.9688C43.2949 22.5 45.1875 20.6074 45.1875 18.2812V12.6562C45.1875 10.3301 43.2949 8.4375 40.9688 8.4375H39.5625V4.21875ZM22.6875 30.9375V33.8438H19.875V30.9375H22.6875ZM21.2812 45.1875C19.344 45.1875 17.9117 43.3693 18.386 41.4727L19.571 36.6562H22.9915L24.1776 41.4778C24.6486 43.3612 23.2255 45.1875 21.2812 45.1875ZM7.21875 2.8125H35.3438C36.119 2.8125 36.75 3.44348 36.75 4.21875V5.625H32.5312C31.1646 5.625 29.417 6.13696 27.3933 6.72949C24.6599 7.53003 21.5621 8.4375 18.4688 8.4375C15.4534 8.4375 13.3275 7.55676 11.4518 6.78003C10.0177 6.18604 8.66345 5.625 7.21875 5.625H5.8125V4.21875C5.8125 3.44348 6.44348 2.8125 7.21875 2.8125ZM36.75 12.6562C36.75 13.4315 36.119 14.0625 35.3438 14.0625H7.21875C6.44348 14.0625 5.8125 13.4315 5.8125 12.6562V8.4375H7.21875C8.10388 8.4375 9.10657 8.85278 10.3755 9.3783C12.3885 10.2122 14.8938 11.25 18.4688 11.25C21.9657 11.25 25.4132 10.24 28.184 9.42883C29.9242 8.91907 31.5681 8.4375 32.5312 8.4375H36.75V12.6562Z" />
+                        </svg>
+                        <div class="main-hero__item-right--text">Repairs</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Main Page -->
+    <main>
+        <section class="section__project-3">
+            <div class="wrapper">
+                <div class="project-3">
+                    <div class="project-3__list">
+                        <div class="project-3__items">
+                            <div class="project-3__item">
+                                <div class="project-3__content content">
+                                    <img src="../img/project1.jpg" class="image-100" alt="">
+                                    <h3 class="project__subtitle">Cubes Building</h3>
+                                    <p class="project__text">Business Centers</p>
+                                    <a href="project.html" class="project__button-outline">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-3__items">
+                            <div class="project-3__item">
+                                <div class="project-3__content content">
+                                    <img src="../img/image-2.jpg" class="image-100" alt="">
+                                    <h3 class="project__subtitle">Modern Cottage</h3>
+                                    <p class="project__text">Private houses</p>
+                                    <a href="project.html" class="project__button-outline">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-3__items">
+                            <div class="project-3__item">
+                                <div class="project-3__content content">
+                                    <img src="../img/image-3.jpg" class="image-100" alt="">
+                                    <h3 class="project__subtitle">Luxury Beach House</h3>
+                                    <p class="project__text">Private houses</p>
+                                    <a href="project.html" class="project__button-outline">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-3__items">
+                            <div class="project-3__item">
+                                <div class="project-3__content content">
+                                    <img src="../img/image-4.jpg" class="image-100" alt="">
+                                    <h3 class="project__subtitle">Modern Double Bedroom</h3>
+                                    <p class="project__text">Apartments & flats</p>
+                                    <a href="project.html" class="project__button-outline">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-3__items">
+                            <div class="project-3__item">
+                                <div class="project-3__content content">
+                                    <img src="../img/image-5.jpg" class="image-100" alt="">
+                                    <h3 class="project__subtitle">Kids Bedroom With Decorations</h3>
+                                    <p class="project__text">Apartments & flats</p>
+                                    <a href="project.html" class="project__button-outline">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-3__items">
+                            <div class="project-3__item">
+                                <div class="project-3__content content">
+                                    <img src="../img/image-6.jpg" class="image-100" alt="">
+                                    <h3 class="project__subtitle">The Pencil Building</h3>
+                                    <p class="project__text">Stores & Malls</p>
+                                    <a href="project.html" class="project__button-outline">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-3__items">
+                            <div class="project-3__item">
+                                <div class="project-3__content content">
+                                    <img src="../img/image-7.jpg" class="image-100" alt="">
+                                    <h3 class="project__subtitle">Red Finger Building</h3>
+                                    <p class="project__text">Apartments & flats</p>
+                                    <a href="project.html" class="project__button-outline">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-3__items">
+                            <div class="project-3__item">
+                                <div class="project-3__content content">
+                                    <img src="../img/image-8.jpg" class="image-100" alt="">
+                                    <h3 class="project__subtitle">Scandinavian Style Interior</h3>
+                                    <p class="project__text">Apartments & flats</p>
+                                    <a href="project.html" class="project__button-outline">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-3__items">
+                            <div class="project-3__item">
+                                <div class="project-3__content content">
+                                    <img src="../img/image-9.jpg" class="image-100" alt="">
+                                    <h3 class="project__subtitle">Brown and Gray Painted House</h3>
+                                    <p class="project__text">Apartments & flats</p>
+                                    <a href="project.html" class="project__button-outline">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-3__items">
+                            <div class="project-3__item">
+                                <div class="project-3__content content">
+                                    <img src="../img/image-9.jpg" class="image-100" alt="">
+                                    <h3 class="project__subtitle">Kids Bedroom With Decorations</h3>
+                                    <p class="project__text">Apartments & flats</p>
+                                    <a href="project.html" class="project__button-outline">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-3__items">
+                            <div class="project-3__item">
+                                <div class="project-3__content content">
+                                    <img src="../img/image-2.jpg" class="image-100" alt="">
+                                    <h3 class="project__subtitle">Kids Bedroom With Decorations</h3>
+                                    <p class="project__text">Apartments & flats</p>
+                                    <a href="project.html" class="project__button-outline">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-3__items">
+                            <div class="project-3__item">
+                                <div class="project-3__content content">
+                                    <img src="../img/image-3.jpg" class="image-100" alt="">
+                                    <h3 class="project__subtitle">Kids Bedroom With Decorations</h3>
+                                    <p class="project__text">Apartments & flats</p>
+                                    <a href="project.html" class="project__button-outline">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-3__items">
+                            <div class="project-3__item">
+                                <div class="project-3__content content">
+                                    <img src="../img/image-4.jpg" class="image-100" alt="">
+                                    <h3 class="project__subtitle">Kids Bedroom With Decorations</h3>
+                                    <p class="project__text">Apartments & flats</p>
+                                    <a href="project.html" class="project__button-outline">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-3__items">
+                            <div class="project-3__item">
+                                <div class="project-3__content content">
+                                    <img src="../img/image-5.jpg" class="image-100" alt="">
+                                    <h3 class="project__subtitle">Kids Bedroom With Decorations</h3>
+                                    <p class="project__text">Apartments & flats</p>
+                                    <a href="project.html" class="project__button-outline">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" id="loadMore">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.09961 2C2.65189 2 3.09961 2.44772 3.09961 3V7.43632C4.75764 4.20928 8.11959 2 11.9996 2C16.3552 2 20.058 4.78413 21.4303 8.66675C21.6144 9.18747 21.3414 9.75879 20.8207 9.94284C20.3 10.1269 19.7287 9.85396 19.5446 9.33325C18.4459 6.22472 15.4813 4 11.9996 4C9.03957 4 6.45326 5.60799 5.06955 8H8.09957C8.65186 8 9.09957 8.44772 9.09957 9C9.09957 9.55228 8.65186 10 8.09957 10H2.09961C1.54732 10 1.09961 9.55228 1.09961 9V3C1.09961 2.44772 1.54732 2 2.09961 2Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.17664 14.0572C3.69736 13.8731 4.26868 14.146 4.45273 14.6668C5.55144 17.7753 8.51608 20 11.9978 20C14.9578 20 17.5441 18.392 18.9278 16H15.8978C15.3455 16 14.8978 15.5523 14.8978 15C14.8978 14.4477 15.3455 14 15.8978 14H21.8977C22.45 14 22.8977 14.4477 22.8977 15V21C22.8977 21.5523 22.45 22 21.8977 22C21.3455 22 20.8977 21.5523 20.8977 21V16.5637C19.2397 19.7907 15.8778 22 11.9978 22C7.64215 22 3.93936 19.2159 2.56705 15.3332C2.383 14.8125 2.65593 14.2412 3.17664 14.0572Z" />
+                        </svg>
+                        <span>load more</span></a>
+                </div>
+            </div>
+        </section>
+        <section class="section__clients">
+            <div class="wrapper">
+                <div class="clients">
+                    <div class="clients__item">
+                        <div class="clients__list">
+                            <div class="clients__swip">
+                                <h1 class="clients__subtitle">What our clients are saying</h1>
+                                <div class="clients__swiper">
+                                    <div class="swiper__item">
+                                        <img src="../img/profile-image.png" alt="" class="clients__profile">
+                                        <p class="clients__info">
+                                            Ipsum aute sunt aliquip aute et occaecat.
+                                            Anim minim do cillum eiusmod enim.
+                                            Consectetur magna cillum consequat minim laboris cillum laboris voluptate minim proident exercitation ullamco.
+                                        </p>
+                                        <div class="clients_name">Shawn Edwards</div>
+                                        <div class="clients__pos">Position, Company name</div>
+                                    </div>
+                                    <div class="swiper__item">
+                                        <img src="../img/profile-image.png" alt="" class="clients__profile">
+                                        <p class="clients__info">
+                                            Ipsum aute sunt aliquip aute et occaecat.
+                                            Anim minim do cillum eiusmod enim.
+                                            Consectetur magna cillum consequat minim laboris cillum laboris voluptate minim proident exercitation ullamco.
+                                        </p>
+                                        <div class="clients_name">Shawn Edwards
+
+                                        </div>
+                                        <div class="clients__pos">Position, Company name</div>
+                                    </div>
+                                    <div class="swiper__item">
+                                        <img src="../img/profile-image.png" alt="" class="clients__profile">
+                                        <p class="clients__info">
+                                            Ipsum aute sunt aliquip aute et occaecat.
+                                            Anim minim do cillum eiusmod enim.
+                                            Consectetur magna cillum consequat minim laboris cillum laboris voluptate minim proident exercitation ullamco.
+                                        </p>
+                                        <div class="clients_name">Shawn Edwards</div>
+                                        <div class="clients__pos">Position, Company name</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clients__main-img">
+                                <img src="./img/clients-img.jpg" alt="" class="clients__main-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__clients section__clients--4">
+            <div class="wrapper">
+                <div class="clients">
+                    <div class="clients__item">
+                        <h1 class="clients__title">Our clients</h1>
+                        <div class="clients__sup">
+                            <a href="#" class="clients__link"><img src="../img/svg/clients-1.svg" alt="" class="sup-img"></a>
+                            <a href="#" class="clients__link"><img src="../img/svg/clients-2.svg" alt="" class="sup-img"></a>
+                            <a href="#" class="clients__link"><img src="../img/svg/clients-3.svg" alt="" class="sup-img"></a>
+                            <a href="#" class="clients__link"><img src="../img/svg/clients-4.svg" alt="" class="sup-img"></a>
+                            <a href="#" class="clients__link"><img src="../img/svg/clients-5.svg" alt="" class="sup-img"></a>
+                            <a href="#" class="clients__link"><img src="../img/svg/clients-6.svg" alt="" class="sup-img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__form">
+            <div class="wrapper form__items">
+                <div class="form__item-li">
+                    <div class="title form__title">A quick way to discuss details</div>
+                    <form class="form__form">
+                        <label for="fname" class="form__label">Name*</label>
+                        <input type="text" id="fname" name="fname" placeholder="Your name" class="form__input">
+                        <label for="lname" class="form__label">Phone*</label>
+                        <input type="text" id="lname" name="lname" placeholder="Your phone number" class="form__input">
+                        <label for="email" class="form__label">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your working email" class="form__input">
+                        <label for="fname" class="form__label">Message*</label>
+                        <textarea name="message" rows="5" cols="10" class="form__input" placeholder="Your message"></textarea>
+                        <div class="checkbox-form">
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1" class="check-label">
+                                I agree to receive communications from Createx Construction Bureau.
+                            </label>
+                        </div>
+                    </form>
+                    <button class="form__btn">send request</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footer__items">
+                    <div class="footer__list">
+                        <div class="footer__item">
+                            <div class="footer__social">
+                                <a href="">
+                                    <img src="/img/svg/logo-footer.svg" alt="">
+                                </a>
+                                <div class="footer__socials">
+                                    <a href="">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.6">
+                                                <path d="M22 11.7424C22 17.1231 17.6047 21.4849 12.1818 21.4849C10.4602 21.4849 8.84289 21.0449 7.43578 20.2727L2 22L3.77222 16.7729C2.87822 15.3049 2.36333 13.5831 2.36333 11.7424C2.36333 6.36178 6.75911 2 12.1818 2C17.6051 2 22 6.36178 22 11.7424ZM12.1818 3.55156C7.62978 3.55156 3.92711 7.226 3.92711 11.7424C3.92711 13.5347 4.51133 15.1944 5.49956 16.5447L4.46822 19.5867L7.64044 18.5784C8.94378 19.4342 10.5051 19.9333 12.182 19.9333C16.7333 19.9333 20.4367 16.2593 20.4367 11.7429C20.4367 7.22644 16.7336 3.55156 12.1818 3.55156ZM17.1398 13.9862C17.0791 13.8869 16.9189 13.8269 16.6784 13.7076C16.4376 13.5882 15.254 13.0102 15.034 12.9309C14.8133 12.8513 14.6524 12.8113 14.4922 13.0502C14.332 13.2893 13.8707 13.8269 13.73 13.9862C13.5896 14.146 13.4493 14.166 13.2084 14.0464C12.968 13.9271 12.1927 13.6747 11.2733 12.8613C10.558 12.2284 10.0749 11.4471 9.93444 11.2078C9.79422 10.9689 9.91978 10.8398 10.04 10.7209C10.1484 10.6138 10.2809 10.442 10.4011 10.3027C10.5218 10.1631 10.5618 10.0638 10.6416 9.90422C10.7222 9.74489 10.682 9.60556 10.6216 9.48578C10.5616 9.36644 10.0798 8.19133 9.87933 7.71311C9.67889 7.23533 9.47867 7.31489 9.338 7.31489C9.19778 7.31489 9.03711 7.29489 8.87667 7.29489C8.71622 7.29489 8.45533 7.35467 8.23467 7.59356C8.01422 7.83267 7.39267 8.41044 7.39267 9.58533C7.39267 10.7604 8.25467 11.8958 8.37533 12.0549C8.49556 12.214 10.0398 14.7038 12.4864 15.66C14.9333 16.6158 14.9333 16.2969 15.3747 16.2569C15.8156 16.2171 16.7982 15.6793 16.9996 15.122C17.1996 14.5638 17.1996 14.0858 17.1398 13.9862Z" fill="white"/>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                    <a href="">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.6">
+                                                <path d="M12 2C6.4775 2 2 6.145 2 11.2587C2 14.1725 3.45375 16.7712 5.72625 18.4688V22L9.13125 20.1313C10.04 20.3825 11.0025 20.5187 12 20.5187C17.5225 20.5187 22 16.3737 22 11.26C22 6.14625 17.5225 2 12 2ZM12.9937 14.4688L10.4475 11.7525L5.47875 14.4688L10.945 8.66625L13.5538 11.3825L18.46 8.66625L12.9937 14.4688Z" fill="white" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                    <a href="">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.6">
+                                                <path d="M17.5628 1.00458L14.7856 1C11.6654 1 9.64903 3.12509 9.64903 6.41423V8.91055H6.85662C6.61532 8.91055 6.41992 9.1115 6.41992 9.35937V12.9763C6.41992 13.2241 6.61554 13.4249 6.85662 13.4249H9.64903V22.5514C9.64903 22.7993 9.84443 23 10.0857 23H13.729C13.9703 23 14.1657 22.799 14.1657 22.5514V13.4249H17.4307C17.672 13.4249 17.8674 13.2241 17.8674 12.9763L17.8688 9.35937C17.8688 9.24036 17.8226 9.12638 17.7409 9.04215C17.6591 8.95793 17.5477 8.91055 17.4318 8.91055H14.1657V6.79439C14.1657 5.77728 14.4017 5.26094 15.6915 5.26094L17.5624 5.26025C17.8035 5.26025 17.9989 5.0593 17.9989 4.81166V1.45317C17.9989 1.20576 17.8037 1.00504 17.5628 1.00458Z" fill="white" />
+                                            </g>
+                                        </svg>
+                                    </a><a href="">
+                                        <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.6">
+                                                <path d="M21.5 2.77233C20.7271 3.10027 19.8978 3.32267 19.0264 3.42196C19.9161 2.91181 20.5972 2.10263 20.92 1.1414C20.0854 1.61383 19.1642 1.95688 18.1826 2.14285C17.3966 1.33994 16.2785 0.839844 15.0384 0.839844C12.6593 0.839844 10.7303 2.68691 10.7303 4.9637C10.7303 5.2866 10.7683 5.60199 10.8418 5.90357C7.26201 5.73141 4.08768 4.08917 1.96314 1.59372C1.59176 2.20189 1.38049 2.91053 1.38049 3.66697C1.38049 5.09814 2.14161 6.36093 3.2964 7.09973C2.5904 7.07713 1.92639 6.89116 1.34508 6.58205V6.63357C1.34508 8.63141 2.83056 10.2988 4.80024 10.6783C4.43936 10.7713 4.05882 10.8228 3.66514 10.8228C3.38696 10.8228 3.11794 10.7964 2.85417 10.7461C3.40267 12.3859 4.99315 13.5783 6.87756 13.611C5.40388 14.7167 3.54573 15.3739 1.52749 15.3739C1.17976 15.3739 0.837236 15.3537 0.5 15.3173C2.40671 16.4896 4.67036 17.1732 7.10327 17.1732C15.028 17.1732 19.3597 10.8881 19.3597 5.43741L19.3453 4.90341C20.1917 4.32537 20.9239 3.59912 21.5 2.77233Z" fill="white" />
+                                            </g>
+                                        </svg>
+                                    </a><a href="">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.6">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.3903 4.11358C22.4182 4.39044 23.2288 5.20086 23.5055 6.22899C24.0197 8.10691 23.9999 12.0213 23.9999 12.0213C23.9999 12.0213 23.9999 15.9158 23.5057 17.7939C23.2288 18.8218 22.4184 19.6324 21.3903 19.9091C19.5122 20.4035 12 20.4035 12 20.4035C12 20.4035 4.50731 20.4035 2.60961 19.8895C1.58148 19.6127 0.771054 18.802 0.4942 17.7741C0 15.9158 0 12.0015 0 12.0015C0 12.0015 0 8.10691 0.4942 6.22899C0.770871 5.20104 1.60125 4.37066 2.60943 4.09399C4.48753 3.59961 11.9998 3.59961 11.9998 3.59961C11.9998 3.59961 19.5122 3.59961 21.3903 4.11358ZM15.8549 12.0016L9.60788 15.5996V8.40355L15.8549 12.0016Z" fill="white" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="footer__text">
+                                Createx Construction Bureau has been successfully operating in the USA construction market since 2000.
+                                We are proud to offer you quality construction and exemplary service.
+                                Our mission is to set the highest standards for construction sphere.
+                            </p>
+                        </div>
+                        <div class="footer__item">
+                            <h3 class="footer__title">Let’s stay in touch</h3>
+                            <form class="footer__form">
+                                <input type="email" placeholder="Your email address " class="footer__input">
+                                <button class="footer__btn">subscribe</button>
+                            </form>
+                            <p class="footer__text-2">
+                                *Subscribe to our newsletter to receive communications and early
+                                updates from Createx Construction Bureau.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__items">
+                    <div class="footer__list-2">
+                        <div class="footer__item-2">
+                            <h3 class="footer__subtitle">HEAD OFFICE</h3>
+                            <div class="footer__subinfo main__foot">Address:
+                                <span>8502 Preston Rd. Inglewood, NewYork</span>
+                            </div>
+                            <div class="footer__subinfo main__foot">Call:
+                                <span>(405) 555-0128</span>
+                            </div>
+                            <div class="footer__subinfo main__foot">Email:
+                                <span>hello@createx.com</span>
+                            </div>
+                        </div>
+                        <div class="footer__item-2">
+                            <h3 class="footer__subtitle">WHO WE ARE</h3>
+                            <a target="_blank" href="">
+                                <div class="footer__subinfo">About Us</div>
+                            </a>
+                            <a target="_blank" href="">
+                                <div class="footer__subinfo">Available Positions</div>
+                            </a>
+                            <a target="_blank" href="">
+                                <div class="footer__subinfo">Contacts</div>
+                            </a>
+                        </div>
+                        <div class="footer__item-2">
+                            <h3 class="footer__subtitle"> OUR EXPERIENCE</h3>
+                            <a target="_blank" href="">
+                                <div class="footer__subinfo">Services</div>
+                            </a>
+                            <a target="_blank" href="">
+                                <div class="footer__subinfo">Work</div>
+                            </a>
+                            <a target="_blank" href="">
+                                <div class="footer__subinfo">News</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__items">
+                    <div class="footer__reserved">© All rights reserved. Made with
+                        <span>
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99925 12.2715C4.93321 10.5252 3.22318 8.78955 2.39626 7.28361C1.54992 5.74228 1.62377 4.4441 2.0934 3.52273C3.05872 1.62892 5.80378 1.02333 7.4763 3.13865L7.99921 3.80001L8.52217 3.13868C10.195 1.02327 12.9402 1.62896 13.9055 3.52273C14.3751 4.44408 14.4489 5.74226 13.6025 7.28359C12.7756 8.78954 11.0654 10.5252 7.99925 12.2715ZM7.99928 1.73726C5.64647 -0.498482 2.17555 0.425546 0.905488 2.91723C0.20846 4.2847 0.198939 6.05212 1.22753 7.92536C2.247 9.78198 4.2796 11.7417 7.67675 13.6194L7.99924 13.7976L8.32173 13.6194C11.719 11.7417 13.7517 9.78199 14.7712 7.92537C15.7999 6.05214 15.7904 4.28472 15.0934 2.91723C13.8233 0.425498 10.3523 -0.498448 7.99928 1.73726Z" fill="#FF5A30" />
+                            </svg>
+                        </span>
+                        <span> by Createx Studio and Alisher K.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/js/scripts-1.js"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+</html>

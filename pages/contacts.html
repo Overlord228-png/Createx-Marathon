@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>CreateX</title>
+</head>
+<div>
+    <img src="../img/contacts.png" class="bg-hero bg-hero__contacts " alt="">
+    <header class="main-color ">
+        <!-- Navbar -->
+        <nav>
+            <div class="wrapper">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="../img/svg/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="about.html" class="menu__item-link" data-scroll>About Us</a>
+                        </li>
+                        <div class="dropdown">
+                            <li class="menu__item">
+                                <button  onclick="myFunction()" class="menu__item-link dropbtn" data-scroll>Services
+                                    <svg width="14" height="9" viewBox="0 0 16 9" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="drop-icon" fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 8.70711C-0.0976311 8.31658 -0.0976311 7.68342 0.292893 7.29289L7.29289 0.292893C7.68342 -0.0976315 8.31658 -0.0976315 8.70711 0.292893L15.7071 7.29289C16.0976 7.68342 16.0976 8.31658 15.7071 8.70711C15.3166 9.09763 14.6834 9.09763 14.2929 8.70711L8 2.41421L1.70711 8.70711C1.31658 9.09763 0.683417 9.09763 0.292893 8.70711Z" />
+                                    </svg>
+                                </button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="services.html">Service-1</a>
+                                    <a href="services-2.html">Service-2</a>
+                                </div>
+                            </li>
+                        </div>
+                        <li class="menu__item"><a target="_blank" href="/pages/portfolio.html" class="menu__item-link" data-scroll>Work</a></li>
+                        <li class="menu__item"><a target="_blank" href="/pages/news.html" class="menu__item-link" data-scroll>News</a></li>
+                        <li class="menu__item"><a target="_blank" href="/pages/contacts.html" class="menu__item-link" data-scroll>Contacts</a></li>
+                    </ul>
+                    <div class="info-block">
+                        <div class="tell">
+                            <img src="../img/svg/tell.svg" alt="" class="tell__img">
+                            <div class="tell__info">
+                                <p class="tell__call">Call us</p>
+                                <a href="telto:(405) 555-0128" class="tell__num">(405) 555-0128</a>
+                            </div>
+                        </div>
+                        <div class="chat">
+                            <img src="../img/svg/chat.svg" alt="" class="chat__img">
+                            <div class="chat__info">
+                                <p class="chat__call">Talk to us</p>
+                                <a href="mail:hello@createx.com" class="chat__num">hello@createx.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        </header>
+        <section class="section__main-hero section__main-hero--news">
+            <div class="wrapper">
+                <div class="main-hero__item">
+                    <div class="main-hero__navigate">
+                        <a href="index.html" class="main-hero__Homepage">Homepage</a>
+                        <span class="icon-around">/</span>
+                        <a href="contacts.html" class="main-hero__Services main-hero__Services--2 main-hero__Services--3">Contacts</a>
+                    </div>
+                    <h1 class="main-hero__title">CONTACTS</h1>
+                    <p class="main-hero__text">Contact us for all your construction needs. We always welcome any questions and comments.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Main Page -->
+    <main>
+        <section class="section__contacts">
+            <div class="wrapper">
+                <h1 class="title">Contact us</h1>
+                <p class="text">Please complete the form. Detailed information will help us to make a tuned offer.</p>
+                <div class="contacts__content">
+                    <img class="contacts__image" src="../img/contacts.jpg" alt="" aria-hidden="true">
+                    <form action="#" class="form-contacts">
+                        <div class="form-contacts__line">
+                            <label class="form-field form-field--gray form-contacts__field">
+                                <span class="form-field__caption">Name*</span><br>
+                                <input type="email" name="name" required placeholder="Your name" class="form-field__input">
+                            </label>
+                            <label class="form-field form-field--gray form-contacts__field">
+                                <span class="form-field__caption">I am interested in</span><br>
+                                <select name="dropdown" class="dropdown__form">
+                                    <label for="cars">Choose a car:</label>
+                                    <option value="Maths" selected>Interior Design</option>
+                                    <option value="Physics">Physics</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="form-contacts__line">
+                            <label class="form-field form-field--gray form-contacts__field">
+                                <span class="form-field__caption">Phone*</span><br>
+                                <input type="tel" name="phone" required placeholder="Your phone number"
+                                    class="form-field__input">
+                            </label>
+                            <label class="form-field form-field--gray form-contacts__field">
+                                <span class="form-field__caption">Location</span><br>
+                                <select name="dropdown" class="dropdown__form">
+                                    <label for="cars">Choose a car:</label>
+                                    <option value="Maths" selected>New York</option>
+                                    <option value="Physics">Physics</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="form-contacts__line">
+                            <label class="form-field form-field--gray form-contacts__field">
+                                <span class="form-field__caption">Email</span><br>
+                                <input type="email" name="email" placeholder="Your working email" class="form-field__input">
+                            </label>
+                            <fieldset class="form-field form-contacts__fields">
+                                <legend class="form-field__caption">Preferred contact method</legend>
+                                <div class="form-field__flex">
+                                    <label class="custom-radio form-contacts__radio">
+                                        <input type="radio" name="contact_method" value="Phone" class="custom-radio__input">
+                                        <span class="custom-radio__text">Phone</span>
+                                    </label>
+                                    <label class="custom-radio form-contacts__radio">
+                                        <input type="radio" name="contact_method" value="Email" class="custom-radio__input">
+                                        <span class="custom-radio__text">Email</span>
+                                    </label>
+                                    <label class="custom-radio form-contacts__radio">
+                                        <input type="radio" name="contact_method" value="Viber" class="custom-radio__input">
+                                        <span class="custom-radio__text">Viber</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <label class="form-field form-field--gray form-contacts__field form-contacts__field--big">
+                            <span class="form-field__caption " >Message*</span><br>
+                            <textarea name="message" placeholder="Your message"
+                                class="form-field__input form-field__input--1 form-field__input--big"></textarea>
+                        </label>
+                        <div class="form-contacts__bottom">
+                            <label class="custom-checkbox form-contacts__checkbox">
+                                <input type="checkbox" class="custom-checkbox__input">
+                                <span class="custom-checkbox__text">I agree to receive communications from Createx Construction
+                                    Bureau.</span>
+                            </label>
+                            <button class="btn__primary contact-btn" type="submit">Send Request</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </section>
+    <section class="section__offer">
+        <div class="wrapper">
+            <h1 class="title">Our offices</h1>
+            <p class="text">Give us a call, send us a note or visit our office. We can’t wait to hear from you!</p>
+            <div class="offer">
+                <div class="offer__items">
+                    <div class="offer__item">
+                        <h3 class="offer__title">New York, USA</h3>
+                        <div class="offer__place">8502 Preston Rd. Inglewood, New York 98380</div>
+                        <a href="#" class="offer__see">See on the map</a>
+                        <div class="offer__call">Call:<span>(405)-555-0128</span></div>
+                        <div class="offer__email">Email:<span>hello@createx.com</span></div>
+                        <div class="offer__call">Schedule:<span>Mon - Fri 9:00 - 18:00</span></div>
+                    </div>
+                    <div class="offer__item">
+                        <h3 class="offer__title">New Jersey, USA</h3>
+                        <div class="offer__place">2464 Royal Ln. Mesa, New Jersey 45463</div>
+                        <a href="#" class="offer__see">See on the map</a>
+                        <div class="offer__call">Call:<span>(808) 555-0111</span></div>
+                        <div class="offer__email">Email:<span>hello@createx.com</span></div>
+                        <div class="offer__call">Schedule:<span>Mon - Fri 9:00 - 18:00</span> </div>
+                    </div>
+                    <div class="offer__item">
+                        <h3 class="offer__title">San Francisco, USA</h3>
+                        <div class="offer__place">8502 Preston Rd. Inglewood, San Francisco 98380</div>
+                        <a href="#" class="offer__see">See on the map</a>
+                        <div class="offer__call">Call:<span>(505) 555-0125</span></div>
+                        <div class="offer__email">Email:<span>hello@createx.com</span> </div>
+                        <div class="offer__call">Schedule:<span>Mon - Fri 10:00 - 19:00</span> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offer-subitem">
+                <div class="offer-subitem__title">Find us at</div>
+                    <div class="offer-subitem__social">
+                        <a href="#" class="offer-subitem__social-1">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.3327 15.6559C29.3327 22.8302 23.4722 28.6459 16.2417 28.6459C13.9463 28.6459 11.7899 28.0592 9.91372 27.0296L2.66602 29.3327L5.02898 22.3632C3.83698 20.4059 3.15046 18.1102 3.15046 15.6559C3.15046 8.48172 9.0115 2.66602 16.2417 2.66602C23.4728 2.66602 29.3327 8.48172 29.3327 15.6559ZM16.2417 4.73476C10.1724 4.73476 5.2355 9.63402 5.2355 15.6559C5.2355 18.0456 6.01446 20.2586 7.33209 22.0589L5.95698 26.1149L10.1866 24.7706C11.9244 25.9116 14.0062 26.5771 16.242 26.5771C22.3105 26.5771 27.2482 21.6785 27.2482 15.6565C27.2482 9.63461 22.3108 4.73476 16.2417 4.73476ZM22.8524 18.6476C22.7715 18.5152 22.5579 18.4352 22.2373 18.2761C21.9161 18.117 20.338 17.3463 20.0447 17.2405C19.7505 17.1345 19.5359 17.0811 19.3223 17.3996C19.1087 17.7185 18.4936 18.4352 18.306 18.6476C18.1188 18.8607 17.9318 18.8873 17.6106 18.7279C17.29 18.5688 16.2562 18.2322 15.0305 17.1478C14.0767 16.3039 13.4325 15.2622 13.2453 14.9431C13.0583 14.6245 13.2257 14.4524 13.386 14.2939C13.5306 14.1511 13.7072 13.922 13.8675 13.7362C14.0284 13.5502 14.0817 13.4177 14.1881 13.205C14.2956 12.9925 14.242 12.8068 14.1614 12.6471C14.0814 12.4879 13.4391 10.9211 13.1718 10.2835C12.9045 9.64646 12.6376 9.75253 12.45 9.75253C12.2631 9.75253 12.0488 9.72587 11.8349 9.72587C11.621 9.72587 11.2731 9.80557 10.9789 10.1241C10.685 10.4429 9.85624 11.2133 9.85624 12.7798C9.85624 14.3466 11.0056 15.8604 11.1665 16.0725C11.3268 16.2847 13.3857 19.6044 16.6479 20.8793C19.9105 22.1537 19.9105 21.7285 20.4989 21.6752C21.0868 21.6222 22.397 20.9051 22.6654 20.162C22.9321 19.4177 22.9321 18.7804 22.8524 18.6476Z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="offer-subitem__social-1">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.9993 2.66602C8.63602 2.66602 2.66602 8.19268 2.66602 15.011C2.66602 18.896 4.60435 22.361 7.63435 24.6243V29.3327L12.1743 26.841C13.386 27.176 14.6693 27.3577 15.9993 27.3577C23.3627 27.3577 29.3327 21.831 29.3327 15.0127C29.3327 8.19435 23.3627 2.66602 15.9993 2.66602ZM17.3243 19.291L13.9293 15.6693L7.30435 19.291L14.5927 11.5543L18.071 15.176L24.6127 11.5543L17.3243 19.291Z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="offer-subitem__social-1">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.4178 1.34009L19.7148 1.33398C15.5545 1.33398 12.866 4.16744 12.866 8.55296V11.8814H9.14281C8.82108 11.8814 8.56055 12.1493 8.56055 12.4798V17.3023C8.56055 17.6328 8.82138 17.9004 9.14281 17.9004H12.866V30.0692C12.866 30.3997 13.1266 30.6673 13.4483 30.6673H18.306C18.6278 30.6673 18.8883 30.3994 18.8883 30.0692V17.9004H23.2416C23.5633 17.9004 23.8239 17.6328 23.8239 17.3023L23.8257 12.4798C23.8257 12.3211 23.7642 12.1692 23.6551 12.0569C23.5461 11.9446 23.3976 11.8814 23.2431 11.8814H18.8883V9.05983C18.8883 7.70368 19.2029 7.01523 20.9227 7.01523L23.4172 7.01432C23.7386 7.01432 23.9991 6.74638 23.9991 6.41619V1.93821C23.9991 1.60833 23.7389 1.3407 23.4178 1.34009Z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="offer-subitem__social-1">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30 7.69579C28.9694 8.13304 27.8637 8.42958 26.7019 8.56197C27.8881 7.88176 28.7962 6.80286 29.2266 5.52121C28.1138 6.15113 26.8855 6.60852 25.5768 6.85648C24.5287 5.78594 23.038 5.11914 21.3845 5.11914C18.2124 5.11914 15.6404 7.58189 15.6404 10.6176C15.6404 11.0482 15.6911 11.4687 15.7891 11.8708C11.016 11.6412 6.78357 9.45157 3.95085 6.12431C3.45568 6.9352 3.17399 7.88005 3.17399 8.88864C3.17399 10.7969 4.18881 12.4806 5.72854 13.4657C4.78719 13.4355 3.90185 13.1876 3.12677 12.7754V12.8441C3.12677 15.5079 5.10741 17.7311 7.73365 18.237C7.25248 18.361 6.74509 18.4297 6.22018 18.4297C5.84927 18.4297 5.49058 18.3945 5.13889 18.3275C5.87023 20.5138 7.99087 22.1037 10.5034 22.1473C8.53851 23.6216 6.06097 24.4978 3.36999 24.4978C2.90634 24.4978 2.44965 24.471 2 24.4224C4.54229 25.9855 7.56048 26.8969 10.8044 26.8969C21.3706 26.8969 27.1463 18.5168 27.1463 11.2492L27.1271 10.5372C28.2556 9.76651 29.2319 8.79818 30 7.69579Z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="offer-subitem__social-1">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M28.5204 5.48608C29.891 5.85522 30.9718 6.93578 31.3407 8.30662C32.0262 10.8105 31.9999 16.0297 31.9999 16.0297C31.9999 16.0297 31.9999 21.2223 31.3409 23.7265C30.9718 25.0971 29.8912 26.1779 28.5204 26.5468C26.0162 27.2059 15.9999 27.2059 15.9999 27.2059C15.9999 27.2059 6.00974 27.2059 3.47948 26.5206C2.10863 26.1515 1.02807 25.0707 0.658933 23.7001C0 21.2223 0 16.0034 0 16.0034C0 16.0034 0 10.8105 0.658933 8.30662C1.02783 6.93602 2.135 5.82885 3.47923 5.45996C5.98337 4.80078 15.9997 4.80078 15.9997 4.80078C15.9997 4.80078 26.0162 4.80078 28.5204 5.48608ZM21.1397 16.0033L12.8104 20.8007V11.206L21.1397 16.0033Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+    <div class="wrapper">
+        <div class="footer">
+            <div class="footer__items">
+                <div class="footer__list">
+                    <div class="footer__item">
+                        <div class="footer__social">
+                            <a href="">
+                                <img src="../img/svg/logo-footer.svg" alt="">
+                            </a>
+                            <div class="footer__socials">
+                                <a href="">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.6">
+                                            <path d="M22 11.7424C22 17.1231 17.6047 21.4849 12.1818 21.4849C10.4602 21.4849 8.84289 21.0449 7.43578 20.2727L2 22L3.77222 16.7729C2.87822 15.3049 2.36333 13.5831 2.36333 11.7424C2.36333 6.36178 6.75911 2 12.1818 2C17.6051 2 22 6.36178 22 11.7424ZM12.1818 3.55156C7.62978 3.55156 3.92711 7.226 3.92711 11.7424C3.92711 13.5347 4.51133 15.1944 5.49956 16.5447L4.46822 19.5867L7.64044 18.5784C8.94378 19.4342 10.5051 19.9333 12.182 19.9333C16.7333 19.9333 20.4367 16.2593 20.4367 11.7429C20.4367 7.22644 16.7336 3.55156 12.1818 3.55156ZM17.1398 13.9862C17.0791 13.8869 16.9189 13.8269 16.6784 13.7076C16.4376 13.5882 15.254 13.0102 15.034 12.9309C14.8133 12.8513 14.6524 12.8113 14.4922 13.0502C14.332 13.2893 13.8707 13.8269 13.73 13.9862C13.5896 14.146 13.4493 14.166 13.2084 14.0464C12.968 13.9271 12.1927 13.6747 11.2733 12.8613C10.558 12.2284 10.0749 11.4471 9.93444 11.2078C9.79422 10.9689 9.91978 10.8398 10.04 10.7209C10.1484 10.6138 10.2809 10.442 10.4011 10.3027C10.5218 10.1631 10.5618 10.0638 10.6416 9.90422C10.7222 9.74489 10.682 9.60556 10.6216 9.48578C10.5616 9.36644 10.0798 8.19133 9.87933 7.71311C9.67889 7.23533 9.47867 7.31489 9.338 7.31489C9.19778 7.31489 9.03711 7.29489 8.87667 7.29489C8.71622 7.29489 8.45533 7.35467 8.23467 7.59356C8.01422 7.83267 7.39267 8.41044 7.39267 9.58533C7.39267 10.7604 8.25467 11.8958 8.37533 12.0549C8.49556 12.214 10.0398 14.7038 12.4864 15.66C14.9333 16.6158 14.9333 16.2969 15.3747 16.2569C15.8156 16.2171 16.7982 15.6793 16.9996 15.122C17.1996 14.5638 17.1996 14.0858 17.1398 13.9862Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.6">
+                                            <path d="M12 2C6.4775 2 2 6.145 2 11.2587C2 14.1725 3.45375 16.7712 5.72625 18.4688V22L9.13125 20.1313C10.04 20.3825 11.0025 20.5187 12 20.5187C17.5225 20.5187 22 16.3737 22 11.26C22 6.14625 17.5225 2 12 2ZM12.9937 14.4688L10.4475 11.7525L5.47875 14.4688L10.945 8.66625L13.5538 11.3825L18.46 8.66625L12.9937 14.4688Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.6">
+                                            <path d="M17.5628 1.00458L14.7856 1C11.6654 1 9.64903 3.12509 9.64903 6.41423V8.91055H6.85662C6.61532 8.91055 6.41992 9.1115 6.41992 9.35937V12.9763C6.41992 13.2241 6.61554 13.4249 6.85662 13.4249H9.64903V22.5514C9.64903 22.7993 9.84443 23 10.0857 23H13.729C13.9703 23 14.1657 22.799 14.1657 22.5514V13.4249H17.4307C17.672 13.4249 17.8674 13.2241 17.8674 12.9763L17.8688 9.35937C17.8688 9.24036 17.8226 9.12638 17.7409 9.04215C17.6591 8.95793 17.5477 8.91055 17.4318 8.91055H14.1657V6.79439C14.1657 5.77728 14.4017 5.26094 15.6915 5.26094L17.5624 5.26025C17.8035 5.26025 17.9989 5.0593 17.9989 4.81166V1.45317C17.9989 1.20576 17.8037 1.00504 17.5628 1.00458Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </a><a href="">
+                                    <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.6">
+                                            <path d="M21.5 2.77233C20.7271 3.10027 19.8978 3.32267 19.0264 3.42196C19.9161 2.91181 20.5972 2.10263 20.92 1.1414C20.0854 1.61383 19.1642 1.95688 18.1826 2.14285C17.3966 1.33994 16.2785 0.839844 15.0384 0.839844C12.6593 0.839844 10.7303 2.68691 10.7303 4.9637C10.7303 5.2866 10.7683 5.60199 10.8418 5.90357C7.26201 5.73141 4.08768 4.08917 1.96314 1.59372C1.59176 2.20189 1.38049 2.91053 1.38049 3.66697C1.38049 5.09814 2.14161 6.36093 3.2964 7.09973C2.5904 7.07713 1.92639 6.89116 1.34508 6.58205V6.63357C1.34508 8.63141 2.83056 10.2988 4.80024 10.6783C4.43936 10.7713 4.05882 10.8228 3.66514 10.8228C3.38696 10.8228 3.11794 10.7964 2.85417 10.7461C3.40267 12.3859 4.99315 13.5783 6.87756 13.611C5.40388 14.7167 3.54573 15.3739 1.52749 15.3739C1.17976 15.3739 0.837236 15.3537 0.5 15.3173C2.40671 16.4896 4.67036 17.1732 7.10327 17.1732C15.028 17.1732 19.3597 10.8881 19.3597 5.43741L19.3453 4.90341C20.1917 4.32537 20.9239 3.59912 21.5 2.77233Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </a><a href="">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.6">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.3903 4.11358C22.4182 4.39044 23.2288 5.20086 23.5055 6.22899C24.0197 8.10691 23.9999 12.0213 23.9999 12.0213C23.9999 12.0213 23.9999 15.9158 23.5057 17.7939C23.2288 18.8218 22.4184 19.6324 21.3903 19.9091C19.5122 20.4035 12 20.4035 12 20.4035C12 20.4035 4.50731 20.4035 2.60961 19.8895C1.58148 19.6127 0.771054 18.802 0.4942 17.7741C0 15.9158 0 12.0015 0 12.0015C0 12.0015 0 8.10691 0.4942 6.22899C0.770871 5.20104 1.60125 4.37066 2.60943 4.09399C4.48753 3.59961 11.9998 3.59961 11.9998 3.59961C11.9998 3.59961 19.5122 3.59961 21.3903 4.11358ZM15.8549 12.0016L9.60788 15.5996V8.40355L15.8549 12.0016Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="footer__text">
+                            Createx Construction Bureau has been successfully operating in the USA construction market since 2000.
+                            We are proud to offer you quality construction and exemplary service.
+                            Our mission is to set the highest standards for construction sphere.
+                        </p>
+                    </div>
+                    <div class="footer__item">
+                        <h3 class="footer__title">Let’s stay in touch</h3>
+                        <form class="footer__form">
+                            <input type="email" placeholder="Your email address " class="footer__input">
+                            <button class="footer__btn">subscribe</button>
+                        </form>
+                        <p class="footer__text-2">
+                            *Subscribe to our newsletter to receive communications and early
+                            updates from Createx Construction Bureau.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__items">
+                <div class="footer__list-2">
+                    <div class="footer__item-2">
+                        <h3 class="footer__subtitle">HEAD OFFICE</h3>
+                        <div class="footer__subinfo main__foot">Address:
+                            <span> 8502 Preston Rd. Inglewood, New York</span>
+                        </div>
+                        <div class="footer__subinfo main__foot">Call:<span> (405) 555-0128</span></div>
+                        <div class="footer__subinfo main__foot">Email:<span> hello@createx.com</span></div>
+                    </div>
+                    <div class="footer__item-2">
+                        <h3 class="footer__subtitle">WHO WE ARE</h3>
+                        <a href=""><div class="footer__subinfo">About Us</div></a>
+                        <a href=""><div class="footer__subinfo">Available Positions</div></a>
+                        <a href="" ><div class="footer__subinfo">Contacts</div></a>
+                    </div>
+                    <div class="footer__item-2">
+                        <h3 class="footer__subtitle">OUR EXPERIENCE</h3>
+                        <a href=""><div class="footer__subinfo">Services</div></a>
+                        <a href=""><div class="footer__subinfo">Work</div></a>
+                        <a href=""><div class="footer__subinfo">News</div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__items">
+                <div class="footer__reserved">© All rights reserved. Made with <span>
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99925 12.2715C4.93321 10.5252 3.22318 8.78955 2.39626 7.28361C1.54992 5.74228 1.62377 4.4441 2.0934 3.52273C3.05872 1.62892 5.80378 1.02333 7.4763 3.13865L7.99921 3.80001L8.52217 3.13868C10.195 1.02327 12.9402 1.62896 13.9055 3.52273C14.3751 4.44408 14.4489 5.74226 13.6025 7.28359C12.7756 8.78954 11.0654 10.5252 7.99925 12.2715ZM7.99928 1.73726C5.64647 -0.498482 2.17555 0.425546 0.905488 2.91723C0.20846 4.2847 0.198939 6.05212 1.22753 7.92536C2.247 9.78198 4.2796 11.7417 7.67675 13.6194L7.99924 13.7976L8.32173 13.6194C11.719 11.7417 13.7517 9.78199 14.7712 7.92537C15.7999 6.05214 15.7904 4.28472 15.0934 2.91723C13.8233 0.425498 10.3523 -0.498448 7.99928 1.73726Z" fill="#FF5A30"/>
+                        </svg>
+                    </span>
+                    <span>by Createx Studio and Alisher K.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+<body class="main__body">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/js/scripts-1.js"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+</html>
