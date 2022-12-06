@@ -6,4 +6,4 @@ page upgrade => 13:24 -> 26/11/22;
 28/11/22 -> исправлял стили для section-2.html in css;
 02/12/22 -> add new html fail;
 05/12/22 -> add three html fails;
-
+06/12/22 -> file editing;
