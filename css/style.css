@@ -4023,6 +4023,13 @@ footer {
 
 .modal__btn {
   cursor: pointer;
+  display: none;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px !important;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
 }
 
 .modal__wrapper-1 {
@@ -4079,6 +4086,7 @@ footer {
 .modal__btn-1 {
   cursor: pointer;
 }
+
 
 .form__label {
   font-style: normal;
@@ -4279,7 +4287,7 @@ footer {
           justify-content: space-between;
 }
 
-.comments__name {
+.comments__name-text {
   padding-bottom: 8px;
   font-style: normal;
   font-weight: 700;
@@ -4288,7 +4296,7 @@ footer {
   color: #1E212C;
 }
 
-.comments__time {
+.comments__time-text {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

@@ -82,19 +82,19 @@ if (historySlider) {
 
     workSlider.on('slideChange', function () {
         console.log(workSlider.realIndex);
-        historyBtns.forEach(el => {
-            el.classList.remove('history-nav__btn--active');
+        historyBtns.forEach(e => {
+            e.classList.remove('history-nav__btn--active');
         });
         document.querySelector(`.history-nav__btn[data-index="${workSlider.realIndex}"]`).classList.add('history-nav__btn--active');
     });
     const historyBtns = document.querySelectorAll('.history-nav__btn');
 
-    historyBtns.forEach((el, idx) => {
-        el.setAttribute('data-index', idx);
-        el.addEventListener('click', (e) => {
+    historyBtns.forEach((e, idx) => {
+        e.setAttribute('data-index', idx);
+        e.addEventListener('click', (e) => {
             const index = e.currentTarget.dataset.index;
-            historyBtns.forEach(el => {
-                el.classList.remove('history-nav__btn--active');
+            historyBtns.forEach(e => {
+                e.classList.remove('history-nav__btn--active');
             });
             e.currentTarget.classList.add('history-nav__btn--active');
             workSlider.slideTo(index);
@@ -259,8 +259,8 @@ const swiperWap = new Swiper('.hero-slider', {
         init: function () {
             const paginationBullets = document.querySelectorAll('.hero__pag .swiper-pagination-bullet');
 
-            paginationBullets.forEach(el => {
-                el.innerHTML = `<span class="hero__bar"></span>`;
+            paginationBullets.forEach(e => {
+                e.innerHTML = `<span class="hero__bar"></span>`;
             });
         },
     },
@@ -273,9 +273,9 @@ const items = document.querySelectorAll('.blocks__item')
 const listItems = document.querySelectorAll('.list__item')
 
 function filter() {
-    list.addEventListener('click', event => {
-        const targetId = event.target.dataset.id
-        const target = event.target
+    list.addEventListener('click', e => {
+        const targetId = e.target.dataset.id
+        const target = e.target
         if (target.classList.contains('list__item')) {
             listItems.forEach(listItem => listItem.classList.remove('active'))
             target.classList.add('active')
@@ -304,16 +304,3 @@ function filter() {
 }
 filter()
 
-const btn = document.querySelector(".btn");
-let idx;
-
-window.onscroll = () => {
-    if (window.pageYOffset == 0) {
-        clearInterval(idx)
-    }
-    if(window.pageYOffset >= 5){
-        btn.style.display = "block"
-    } else {
-        btn.style.display = "none"
-    }
-} 
